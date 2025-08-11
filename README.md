@@ -33,9 +33,6 @@ The majority of facilities cluster between **15–25%**, suggesting a concentrat
 Medication continuation averages **79.6%**, though the lowest-performing facilities often lag in this metric.  
 Ownership type and geography both strongly correlate with outcomes, and top-performing facilities demonstrate that **sub-14% readmission rates are achievable**.
 
-![Overall KPI Snapshot](Dashboard1.PNG)  
-*Snapshot showing key performance indicators: Avg 30-Day Readmission (19.5%), Facilities “Worse than National Rate” (6.2%), and Avg Medical Continuation (79.6%).*
-
 ---
 
 ## Insights Deep Dive
@@ -45,8 +42,7 @@ Ownership type and geography both strongly correlate with outcomes, and top-perf
 - **Low and high extremes are rare but critical.** Only 36 facilities report <15% readmission, while 44 exceed 25%, representing both model examples and urgent intervention candidates.
 - **Medication continuation rates are strong but uneven.** Averaging 79.6%, most facilities perform well, but those below the benchmark often struggle in this area — reinforcing the link between follow-up care and reduced readmissions.
 
-![Facility Readmission Distribution](Dashboard1.PNG)  
-*Treemap showing clustering of facilities by readmission ranges, with the majority between 15–25%.*
+<img width="1100" height="771" alt="Dashboard1" src="https://github.com/user-attachments/assets/6b1f122f-692a-4dea-ab3f-411b52a5c6af" />
 
 ---
 
@@ -55,8 +51,7 @@ Ownership type and geography both strongly correlate with outcomes, and top-perf
 - **The gap between top and bottom is stark.** The highest 10 facilities all exceed 27%, with Community Hospital of San Bernardino reaching 31.6%. This represents an **18 percentage point spread**, underscoring systemic care quality disparities.
 - **Performance polarity highlights intervention needs.** While low performers likely require systemic change, high performers can serve as case studies for scalable quality improvements.
 
-![Top & Bottom Facilities](Dashboard2.PNG)  
-*Bar charts of top and bottom 10 facilities by readmission rate.*
+<img width="1174" height="812" alt="Dashboard2" src="https://github.com/user-attachments/assets/81611b49-4a1a-4eba-9ed6-59421437aba9" />
 
 ---
 
@@ -65,8 +60,7 @@ Ownership type and geography both strongly correlate with outcomes, and top-perf
 - **Right-skewed readmission distribution shows concentrated mid-tier and long tail of high-risk sites.** Half of all facilities fall between 15–20%, but the distribution extends above 31%, with the top 10% exerting outsized influence on national averages.
 - **Metric variability suggests targeted metric-specific interventions.** Facilities scoring zero in any intervention metric present a low-effort opportunity for immediate improvement.
 
-![Intervention Metrics](Dashboard3.PNG)  
-*Box plots of intervention metric distribution and histogram of facility readmission rates.*
+<img width="949" height="790" alt="Dashboard3" src="https://github.com/user-attachments/assets/d48dd05f-8db1-4417-92c4-c75d43ad706f" />
 
 ---
 
@@ -75,8 +69,7 @@ Ownership type and geography both strongly correlate with outcomes, and top-perf
 - **Geographic spread points to systemic disparities.** State averages range from ≈17% in top performers to over 22% in high-risk states.  
 - **Policy and infrastructure influence is evident.** New York averages 18.7%, while larger states like Texas and California hover near 19.5%, hinting at differences in healthcare funding, accessibility, and community resources.
 
-![Ownership & State Map](Dashboard4.PNG)  
-*Dual view showing readmission by ownership type and U.S. state heatmap.*
+<img width="1382" height="821" alt="Dashboard4" src="https://github.com/user-attachments/assets/015e9f8f-eb74-4761-a2da-2918e7b1b031" />
 
 ---
 
