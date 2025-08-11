@@ -1,81 +1,101 @@
-# **Psychiatric Facility Readmission Analysis**  
+# Psychiatric Facility Readmission Analysis
 
-## **Background & Overview**  
-This project analyzes psychiatric facility performance in the U.S., focusing on **30-day readmission rates**, **medication continuation**, and **screening compliance**. Using national inpatient psychiatric facility quality measure data, the goal was to identify patterns, highlight best and worst performers, and provide actionable recommendations for reducing readmissions.  
+## Project Background
+This project analyzes psychiatric facility readmission rates across the United States, with a focus on understanding performance trends, identifying top and bottom performers, evaluating intervention implementation, and assessing the influence of ownership structures and geography.  
+The dataset spans **1,451 facilities** and includes metrics on 30-day readmission rates, medication continuation, screening for metabolic disorders (SMD), substance use treatment (SUB), and tobacco cessation counseling (TOB-3).  
 
-The analysis was conducted using **SQL Server** for data preparation, **Excel** for intermediate checks, and **Tableau** for interactive visualization.  
+From the perspective of a data analyst at a healthcare quality oversight organization, the goal was to uncover patterns that could guide targeted interventions and improve patient outcomes.
 
----
+**Insights and recommendations are provided on the following key areas:**
+- **Category 1:** Facility Readmission Overview
+- **Category 2:** Top & Bottom Performing Facilities
+- **Category 3:** Intervention Metrics & Readmission Distribution
+- **Category 4:** Ownership & Regional Benchmarks
 
-## **Data Structure Overview**  
-The dataset included facility-level metrics:  
-- **Readmission Rates** (30-day psychiatric)  
-- **Medication Continuation** (% patients continuing prescribed meds post-discharge)  
-- **Screening Compliance** for metabolic disorders (SMD), substance use (SUB), and tobacco cessation (TOB-3)  
-- **Ownership Type** (e.g., physician-owned, government, private non-profit)  
-- **State-Level Performance**  
-
-Data cleaning included:  
-- Standardizing column names  
-- Removing nulls and “Too Few to Report” facilities  
-- Calculating performance tiers for readmission rates  
-- Grouping facilities into deciles for deeper KPI comparisons  
+The SQL queries used to inspect and clean the data for this analysis can be found here → [SQL Data Cleaning Scripts](#)  
+Targeted SQL queries regarding specific performance metrics can be found here → [SQL Analytical Queries](#)  
+An interactive Tableau dashboard used to explore and report findings can be found here → [Interactive Dashboard](#)
 
 ---
 
-## **Executive Summary**  
-Across **1,451 facilities**, the average 30-day psychiatric readmission rate is **19.5%**, with **6.2%** performing worse than the national benchmark. The average medication continuation rate is **79.6%**, indicating strong follow-up at many sites.  
-
-However, performance distribution shows most facilities cluster in the **15–25% readmission range**, leaving significant room for improvement. Ownership type and geography emerge as key influencing factors, with **physician-owned hospitals** having both the highest readmissions and the lowest screening rates.  
-
----
-
-## **Insights Deep Dive**  
-
-### **1. Overall Facility Performance **
-<img width="1100" height="771" alt="Dashboard1" src="https://github.com/user-attachments/assets/ba666b92-fa40-44eb-a8d6-084e03e68502" />
-
-- **Most facilities (93%)** fall in the **15–25% readmission range**.  
-- Only **36 facilities** have readmissions below 15%, while **44 exceed 25%**.  
-- Suggests a larger focus area for small-scale improvements in the 20–25% group, while still addressing high-risk sites.  
-
-### **2. Top & Bottom Facilities **  
-<img width="1174" height="812" alt="Dashboard2" src="https://github.com/user-attachments/assets/d0291917-762d-4710-a2f5-2f6de6b3b104" />
-
-- Ten best performers, such as **Saint John Hospital (13.3%)**, consistently stay under 14%.  
-- Ten worst performers, including **Community Hospital of San Bernardino (31.6%)**, all exceed 27%.  
-- Shows both where best practices are working and where urgent interventions are required.  
-
-### **3. Intervention Metrics & Distribution ** 
-<img width="949" height="790" alt="Dashboard3" src="https://github.com/user-attachments/assets/ee3a4079-95fb-4076-833c-7f86a61428a3" />
-
-- Over **80% of facilities** screen for metabolic disorders (SMD) and over **50%** provide tobacco cessation counseling (TOB-3).  
-- However, **some facilities report 0% compliance**, suggesting major gaps in implementation or reporting.  
-- Readmission distribution is **right-skewed**, with half of facilities between 15–20% and a long tail above 25%.  
-
-### **4. Ownership & Regional Patterns **  
-<img width="1382" height="821" alt="Dashboard4" src="https://github.com/user-attachments/assets/65ebf3bd-6fbc-44d4-b7ea-793c87e2222a" />
-
-- **Physician-owned facilities** average the highest readmissions (**21.5%**) and lowest screening rates (**58%**).  
-- **Non-profit hospitals** perform best overall.  
-- State-level analysis shows rates range from **~17% in top-performing states** to **over 22% in high-risk areas**.  
+## Data Structure & Initial Checks
+The primary dataset for this analysis is a flat table exported from CMS hospital reporting systems, containing:
+- **Facility Information:** ID, Name, State, ZIP Code  
+- **Performance Metrics:** Readmission rate, Medication continuation %, Screening percentages for SMD, SUB, and TOB-3  
+- **Timeframe:** Reporting periods covering recent performance windows  
 
 ---
 
-## **Recommendations**  
+## Executive Summary
+**Overview of Findings**  
+Nationwide psychiatric facility readmission rates average **19.5%**, with **6.2% of facilities performing worse than the national benchmark**.  
+The majority of facilities cluster between **15–25%**, suggesting a concentrated improvement opportunity.  
+Medication continuation averages **79.6%**, though the lowest-performing facilities often lag in this metric.  
+Ownership type and geography both strongly correlate with outcomes, and top-performing facilities demonstrate that **sub-14% readmission rates are achievable**.
 
-1. **Target the 20–25% Readmission Group**  
-   - This segment makes up a large share of facilities and is close to breaking into the “average” range.  
-   - Low-cost, incremental improvements here could yield major national impact.  
+![Overall KPI Snapshot](Dashboard1.PNG)  
+*Snapshot showing key performance indicators: Avg 30-Day Readmission (19.5%), Facilities “Worse than National Rate” (6.2%), and Avg Medical Continuation (79.6%).*
 
-2. **Address Zero-Compliance Facilities**  
-   - Investigate facilities reporting **0%** screening or intervention rates to identify data issues or operational failures.  
+---
 
-3. **Share Best Practices from Top Performers**  
-   - Facilities like Saint John Hospital can serve as case studies for effective discharge planning, follow-up care, and intervention programs.  
+## Insights Deep Dive
 
-4. **Ownership-Based Strategies**  
-   - Physician-owned facilities need targeted improvement plans, possibly linked to performance-based incentives or required operational changes.  
+### **Category 1: Facility Readmission Overview**
+- **Clustering within a narrow range offers a clear improvement target.** 93% of facilities fall between 15%–25% readmission, with 698 facilities in the 15–20% range and 446 in the 20–25% range. Shifting mid-tier performers down could materially lower the national average.
+- **Low and high extremes are rare but critical.** Only 36 facilities report <15% readmission, while 44 exceed 25%, representing both model examples and urgent intervention candidates.
+- **Medication continuation rates are strong but uneven.** Averaging 79.6%, most facilities perform well, but those below the benchmark often struggle in this area — reinforcing the link between follow-up care and reduced readmissions.
 
-5. **Regional Health Policy Alignment**  
-   - States with high average readmissions may benefit from coordinated policy changes, funding allocations, and resource sharing between top- and low-performing regions.  
+![Facility Readmission Distribution](Dashboard1.PNG)  
+*Treemap showing clustering of facilities by readmission ranges, with the majority between 15–25%.*
+
+---
+
+### **Category 2: Top & Bottom Performing Facilities**
+- **Best practices deliver sub-14% rates.** Saint John Hospital and Erie County Medical Center tie at 13.3%, demonstrating the feasibility of low readmissions with robust discharge planning and patient engagement.
+- **The gap between top and bottom is stark.** The highest 10 facilities all exceed 27%, with Community Hospital of San Bernardino reaching 31.6%. This represents an **18 percentage point spread**, underscoring systemic care quality disparities.
+- **Performance polarity highlights intervention needs.** While low performers likely require systemic change, high performers can serve as case studies for scalable quality improvements.
+
+![Top & Bottom Facilities](Dashboard2.PNG)  
+*Bar charts of top and bottom 10 facilities by readmission rate.*
+
+---
+
+### **Category 3: Intervention Metrics & Readmission Distribution**
+- **Screening compliance is high but inconsistent.** Over 80% of facilities screen for SMD and over 50% provide TOB-3 counseling, but a notable minority report 0%, suggesting either implementation failure or data reporting gaps.
+- **Right-skewed readmission distribution shows concentrated mid-tier and long tail of high-risk sites.** Half of all facilities fall between 15–20%, but the distribution extends above 31%, with the top 10% exerting outsized influence on national averages.
+- **Metric variability suggests targeted metric-specific interventions.** Facilities scoring zero in any intervention metric present a low-effort opportunity for immediate improvement.
+
+![Intervention Metrics](Dashboard3.PNG)  
+*Box plots of intervention metric distribution and histogram of facility readmission rates.*
+
+---
+
+### **Category 4: Ownership & Regional Benchmarks**
+- **Ownership type impacts outcomes.** Physician-owned facilities average 21.5% readmissions and just 58% screening compliance, while non-profit hospitals outperform across metrics.
+- **Geographic spread points to systemic disparities.** State averages range from ≈17% in top performers to over 22% in high-risk states.  
+- **Policy and infrastructure influence is evident.** New York averages 18.7%, while larger states like Texas and California hover near 19.5%, hinting at differences in healthcare funding, accessibility, and community resources.
+
+![Ownership & State Map](Dashboard4.PNG)  
+*Dual view showing readmission by ownership type and U.S. state heatmap.*
+
+---
+
+## Recommendations
+Based on the insights and findings above, we recommend:
+
+1. **Target mid-tier facilities (15–25%) for focused improvement programs** — even small percentage reductions here could shift national averages.
+2. **Leverage top-performing facilities (<14%) as case studies** to replicate best practices nationwide.
+3. **Address zero-reporting facilities immediately** by implementing basic screening and counseling protocols.
+4. **Review ownership-related performance gaps** — introduce quality oversight measures for physician-owned facilities to ensure adherence to best practices.
+5. **Implement state-level quality collaboratives** in high-risk regions to share resources, strategies, and policy support.
+
+---
+
+## Assumptions and Caveats
+- Some facilities may underreport metrics (e.g., 0% screening rates) due to data submission errors rather than true absence of service.
+- Data is aggregated at the facility level and may mask patient-level variations.
+- Geographic averages may be influenced by outlier facilities in each state.
+- “Worse than National Rate” classification is based solely on CMS thresholds and may not capture all dimensions of performance quality.
+
+---
+
