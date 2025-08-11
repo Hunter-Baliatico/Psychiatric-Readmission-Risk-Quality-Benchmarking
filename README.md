@@ -14,7 +14,7 @@ From the perspective of a data analyst at a healthcare quality oversight organiz
 
 The SQL queries used to inspect and clean the data for this analysis can be found here → [SQL Data Cleaning Scripts](#)  
 Targeted SQL queries regarding specific performance metrics can be found here → [SQL Analytical Queries](#)  
-An interactive Tableau dashboard used to explore and report findings can be found here → [Interactive Dashboard](#)
+An interactive Tableau story including all 5 dashboard used to explore and report findings can be found here → https://public.tableau.com/app/profile/hunter.baliatico/viz/PsychiatricFacilityReadmissionAnalysis/PsychiatricFacilityReadmissionAnalysis
 
 ---
 
