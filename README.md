@@ -77,26 +77,19 @@ Ownership type and geography both strongly correlate with outcomes, and top-perf
 Based on the analysis of psychiatric facility performance across all four dashboard areas, we recommend the following targeted actions:
 
 1. **Target mid-tier facilities (15–25% readmission) with structured improvement initiatives.**  
-   These facilities make up over 90% of the dataset and represent the largest opportunity for measurable national impact. Even a **2–3 percentage point reduction** in this group could reduce the national average by ~1.5–2 points. Strategies should include enhanced discharge planning, increased follow-up scheduling within 7 days, and real-time monitoring of post-discharge patient status.
+   These facilities make up over 90% of the dataset and represent the largest opportunity for measurable national impact. Even a 2–3 percentage point reduction in this group could reduce the national average by ~1.5–2 points. Strategies should include enhanced discharge planning, increased follow-up scheduling within 7 days, and real-time monitoring of post-discharge patient status.
 
 2. **Leverage top-performing facilities (<14% readmission) as operational benchmarks.**  
-   Facilities such as Saint John Hospital (13.3%) consistently outperform national averages while maintaining high medication continuation rates. Conduct structured case studies and site visits to document their discharge workflows, patient education programs, and care coordination processes, then create a standardized “best practice playbook” for national distribution.
+   Facilities such as Saint John Hospital (13.3%) consistently outperform national averages. Conduct structured case studies and site visits to document their discharge workflows, patient education programs, and care coordination processes, then create a standardized “best practice playbook” for national distribution.
 
 3. **Prioritize facilities with 0% reporting in key intervention metrics (SMD, SUB, TOB-3).**  
-   A non-trivial number of facilities reported **no screening or counseling activity** for critical measures. Whether due to process gaps or reporting issues, these sites represent a “low-hanging fruit” opportunity for immediate improvement. A mandatory compliance check combined with rapid onboarding to standardized screening protocols could bring these facilities in line within a single reporting cycle.
+   A non-trivial number of facilities reported no screening or counseling activity for critical measures. Whether due to process gaps or reporting issues, these sites represent an opportunity for immediate improvement. A mandatory compliance check combined with rapid onboarding to standardized screening protocols could bring these facilities in line within a single reporting cycle.
 
 4. **Address ownership-related performance disparities through oversight and incentives.**  
-   Physician-owned hospitals average **21.5% readmissions** and the lowest screening compliance (≈58%). Regulatory bodies should consider targeted audits, quality-linked reimbursement models, and incentive programs to encourage adherence to intervention protocols. Conversely, non-profits can be recognized for their higher performance and encouraged to mentor lower-performing peers.
+   Physician-owned hospitals average 21.5% readmissions and the lowest screening compliance (≈58%). Regulatory bodies should consider targeted audits and incentive programs to encourage adherence to intervention protocols. In addition, non-profits can be recognized for their higher performance and encouraged to mentor lower-performing peers.
 
 5. **Establish regional quality collaboratives to reduce geographic performance gaps.**  
-   State-level disparities—ranging from **17% in the best-performing states to 22%+ in others**—suggest uneven resource allocation, policy environments, and care delivery structures. Regional collaboratives should share staffing models, community resource partnerships, and telehealth integration strategies that have proven successful in lower-rate states.
-
-6. **Incorporate continuous performance monitoring and real-time feedback loops.**  
-   Static, annual reporting fails to capture early warning signs of performance decline. Implementing a quarterly monitoring system would allow facilities to spot rising readmission trends early and deploy corrective measures before they materially affect outcomes.
-
-7. **Close data quality and reporting gaps to improve accuracy and trust in metrics.**  
-   Outliers such as implausibly low or zero rates for certain measures should trigger data validation checks. Improving reporting quality ensures that intervention targeting is accurate and that national benchmarks reflect true performance rather than inconsistent data capture.
-
+   State-level disparities ranging from 17% in the best-performing states to 22%+ in others suggest uneven resource allocation, policy environments, and care delivery structures. Regional collaboratives should share staffing models, community resource partnerships, and integration strategies that have proven successful in lower-rate states.
 
 ---
 
