@@ -12,8 +12,8 @@ From the perspective of a data analyst at a healthcare quality oversight organiz
 - **Category 3:** Intervention Metrics & Readmission Distribution
 - **Category 4:** Ownership & Regional Benchmarks
 
-The SQL queries used to inspect, clean, and analyze the data for this analysis can be found here → [SQL Data Cleaning Scripts](#)  
-The full SQL documentation page can be found here → SQL Documentation.md
+The SQL queries used to inspect, clean, and analyze the data for this analysis can be found in the sql_queries folder.
+The full SQL documentation page can be found on the SQL Documentation page.
 An interactive Tableau story including all 5 dashboard used to explore and report findings can be found here → https://public.tableau.com/app/profile/hunter.baliatico/viz/PsychiatricFacilityReadmissionAnalysis/PsychiatricFacilityReadmissionAnalysis
 
 ---
