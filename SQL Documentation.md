@@ -6,7 +6,7 @@
 
 ### InpatientPsy Row Count
 Confirming expected record volumes after loading data. 
--[View SQL](sql_queries/data_gathering/inpatientpsy-row-count.sql)
+[View SQL](sql_queries/data_gathering/inpatientpsy-row-count.sql)
 
 ### HospitalGen Row Count
 [View SQL](sql_queries/data_gathering/hospitalgen-row-count.sql)
@@ -137,11 +137,11 @@ Purpose: create Tableau dashboards with targeted result sets for ranked lists, d
 
 - **Top 10 Lowest Readmission Rates**  
   Facilities with the best performance.  
-  [View SQL](sql_queries/visualizations/top-10-lowest-readmission-rate-facilities.sql)
+  [View SQL](sql_queries/visualizations/top-10-lowest-readmission-rate-facilities(1).sql)
 
 - **Top 10 Highest Readmission Rates**  
   Facilities with the worst performance.  
-  [View SQL](sql_queries/visualizations/top-10-highest-readmission-rate-facilities(1).sql)
+  [View SQL](sql_queries/visualizations/top-10-highest-readmission-rate-facilities.sql)
 
 - **Decile Cut-Points for Key Metrics**  
   Percentile thresholds used for distribution and tiering visuals.  
