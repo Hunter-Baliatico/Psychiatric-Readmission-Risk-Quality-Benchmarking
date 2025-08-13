@@ -137,7 +137,7 @@ Purpose: create Tableau dashboards with targeted result sets for ranked lists, d
 
 - **Top 10 Lowest Readmission Rates**  
   Facilities with the best performance.  
-  [View SQL](sql_queries/visualizations/top-10-lowest-readmission-rate-facilities(1).sql)
+  [View SQL](sql_queries/visualizations/top-10-lowest-readmission-rate-facilities (1).sql)
 
 - **Top 10 Highest Readmission Rates**  
   Facilities with the worst performance.  
