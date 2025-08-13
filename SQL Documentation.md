@@ -141,7 +141,7 @@ Purpose: create Tableau dashboards with targeted result sets for ranked lists, d
 
 - **Top 10 Highest Readmission Rates**  
   Facilities with the worst performance.  
-  [View SQL](sql_queries/visualizations/top-10-highest-readmission-rate-facilities.sql)
+  [View SQL](sql_queries/visualizations/top-10-highest-readmission-rate-facilities(1).sql)
 
 - **Decile Cut-Points for Key Metrics**  
   Percentile thresholds used for distribution and tiering visuals.  
