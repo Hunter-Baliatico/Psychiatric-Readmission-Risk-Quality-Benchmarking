@@ -6,7 +6,7 @@
 
 ### InpatientPsy Row Count
 Confirming expected record volumes after loading data. 
-[View SQL](sql_queries/data_gathering/inpatientpsy-row-count.sql)
+-[View SQL](sql_queries/data_gathering/inpatientpsy-row-count.sql)
 
 ### HospitalGen Row Count
 [View SQL](sql_queries/data_gathering/hospitalgen-row-count.sql)
