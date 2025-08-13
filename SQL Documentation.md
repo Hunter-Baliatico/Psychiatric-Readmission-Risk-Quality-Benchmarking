@@ -6,8 +6,8 @@
 
 ### Row Counts
 Quick sanity check to confirm expected record volumes after ingest.  
-[View SQL](../sql_queries/count_rows.sql)
-
+[Inpatient Psy Row Count](../sql_queries/data_gathering/inpatientpsy-row-count.sql)
+[Hospital Gen Row Count](../sql_queries/data_gathering/hospitalgen-row-count.sql)
 ### Null Checks on Keys
 Ensure the primary join key (`facilityId`) is present in all rows.  
 [View SQL](../sql_queries/null_check_facilityId.sql)
